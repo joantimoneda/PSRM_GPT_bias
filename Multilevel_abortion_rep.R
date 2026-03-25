@@ -9,7 +9,7 @@ library(readxl)
 library(arm)
 library(stargazer)
 
-setwd("")
+setwd("") # Set to the directory containing the data files
 
 data <- read_excel("data_abortion.xlsx")
 

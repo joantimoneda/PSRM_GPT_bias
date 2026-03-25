@@ -9,7 +9,7 @@ library(readxl)
 library(arm)
 library(stargazer)
 
-setwd("")
+setwd("") # Set to the directory containing the data files
 
 data <- read_excel("data_catindep.xlsx")
 
@@ -52,7 +52,7 @@ axis(2, at=c(seq(0,1,0.1)), las=1, cex.axis=0.4)
 for(i in 1:2){
   coefs <- coefs_mlmod_sp[,i]
   points(0.1, invlogit(as.double(coefs[1])), col=i+1,  pch=19, cex=0.25)
-  points(0.4, invlogit(as.double(coefs[2])), col=i+1,  pxwch=19, cex=0.25)
+  points(0.4, invlogit(as.double(coefs[2])), col=i+1,  pch=19, cex=0.25)
   
   se <- se_coefs_mlmod_sp[,i]
   segments(0.1, invlogit(as.double(coefs[1] - se[1]*2.58)),
