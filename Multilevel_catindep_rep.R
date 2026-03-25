@@ -1,3 +1,7 @@
+# Title:  Replication Code - Is ChatGPT Conservative or Liberal? (Catalan Independence Case)
+# Author: Joan Timoneda
+# Date:   May 2024
+
 rm(list=ls())
 
 library(lme4)
